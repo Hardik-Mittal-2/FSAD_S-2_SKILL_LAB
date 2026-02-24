@@ -1,0 +1,33 @@
+package com.klu.entity;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Certification {
+
+	private int id = 101;
+	private String name = "Spring Skill 5 Certification";
+	private String dateOfCompletion = "24-Feb-2026";
+
+	public Certification() {
+		System.out.println("Certification Bean Created");
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public String getDateOfCompletion() {
+		return dateOfCompletion;
+	}
+
+	@Override
+	public String toString() {
+		return "Certification ID: " + id + "\nCertification Name: " + name + "\nDate Of Completion: "
+				+ dateOfCompletion;
+	}
+}

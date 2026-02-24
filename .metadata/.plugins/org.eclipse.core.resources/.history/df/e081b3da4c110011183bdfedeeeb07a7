@@ -1,0 +1,27 @@
+package com.klu.entity;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Student {
+
+	private int id = 1;
+	private String name = "Hardik Mittal";
+	private String gender = "Male";
+
+	@Autowired
+	private Certification certification;
+
+	public Student() {
+		System.out.println("Student Bean Created");
+	}
+
+	public void display() {
+		System.out.println("Student ID: " + id);
+		System.out.println("Student Name: " + name);
+		System.out.println("Gender: " + gender);
+		System.out.println("\n--- Certification Details ---");
+		System.out.println(certification);
+	}
+}
