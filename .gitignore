@@ -1,8 +1,0 @@
-.metadata/
-**/.metadata/
-target/
-.settings/
-.classpath
-.project
-.mvn/
-*.class
