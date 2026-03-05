@@ -5,7 +5,6 @@ import java.util.Scanner;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import com.klu.App;
 import com.klu.entity.Student;
 import com.klu.entity.Certification;
 
@@ -18,7 +17,6 @@ public class App {
 
         Student student = context.getBean(Student.class);
         Certification cert = student.getCertification();
-
         Scanner sc = new Scanner(System.in);
 
         // Student Input
